@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Centro Espírita Alunos do Bem</title>
+  </head>
+
+  <body>
+    <div id="form-outer">
+      <img id="logo" src="./image.png" alt="logo" />
+      <h1 id="titulo">Indicação para se tornar socio efetivo</h1>
+
+      <p class="description">
+        Preencha o formulário abaixo para se candidatar a sócio efetivo do Centro Espírita Alunos do Bem.
+      </p>
+
+      <form
+        action="https://sheetdb.io/api/v1/x74d936omolkk?sheet=candidatos"
+        method="POST"
+        id="sheetdb-form"
+      >
+        <div class="rowTab">
+          <div class="labels">
+            <label for="nome">Nome:</label>
+          </div>
+          <div class="rightTab">
+            <input
+              id="nome"
+              class="input-field"
+              type="text"
+              name="data[nome]"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="rowTab">
+          <div class="labels">
+            <label for="dia_trabalho">Dia de trabalho:</label>
+          </div>
+          <div class="rightTab">
+            <input
+              id="dia_trabalho"
+              class="input-field"
+              type="text"
+              name="data[dia_trabalho]"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="rowTab">
+          <div class="labels">
+            <label for="tipo_mediunidade">Tipo de mediunidade:</label>
+          </div>
+          <div class="rightTab">
+            <input
+              id="tipo_mediunidade"
+              class="input-field"
+              type="text"
+              name="data[tipo_mediunidade]"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="rowTab">
+          <div class="labels">
+            <label for="telefone">Telefone:</label>
+          </div>
+          <div class="rightTab">
+            <input
+              id="telefone"
+              class="input-field"
+              type="text"
+              name="data[telefone]"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="rowTab">
+          <div class="labels">
+            <label for="endereco">Endereço:</label>
+          </div>
+          <div class="rightTab">
+            <input
+              id="endereco"
+              class="input-field"
+              type="text"
+              name="data[endereco]"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="rowTab">
+          <div class="labels">
+            <label for="dia_estudo">Dia de estudo:</label>
+          </div>
+          <div class="rightTab">
+            <input
+              id="dia_estudo"
+              class="input-field"
+              type="text"
+              name="data[dia_estudo]"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="rowTab">
+          <div class="labels">
+            <label for="contribuicao">Você já contribuiu com a casa?</label>
+          </div>
+          <div class="rightTab">
+            <input
+              id="contribuicao"
+              class="input-field"
+              type="text"
+              name="data[contribuicao]"
+              required
+            />
+          </div>
+        </div>
+
+        <button id="submit" type="submit">Clique aqui para registrar a resposta</button>
+      </form>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
