@@ -19,6 +19,7 @@ form.addEventListener("submit", e => {
 
         // Reativar o botão após a resposta do servidor
         submitButton.disabled = false;
+        submitButton.innerHTML = 'Enviar resposta!';
     }).catch(error => {
         // Caso haja um erro na requisição, reative o botão e informe o usuário
         submitButton.disabled = false;
