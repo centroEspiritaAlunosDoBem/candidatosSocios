@@ -23,6 +23,6 @@ form.addEventListener("submit", e => {
     }).catch(error => {
         // Caso haja um erro na requisição, reative o botão e informe o usuário
         submitButton.disabled = false;
-        alert('Houve um erro ao enviar o formulário. Tente novamente.');
+        alert('Houve um erro ao enviar o formulário, verifique sua internet!.');
     });
 });
