@@ -6,6 +6,7 @@ form.addEventListener("submit", e => {
 
     // Desativar o botão de enviar
     submitButton.disabled = true;
+    submitButton.innerHTML = 'Enviando resposta, aguarde!';
 
     fetch(form.action, {
         method: "POST",
